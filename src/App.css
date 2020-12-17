@@ -51,3 +51,7 @@
   background-color: rgb(34,35,35);
   height: 100vh;
 }
+
+.displayPersonContainer {
+  background-color: white;
+}
