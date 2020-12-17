@@ -1,34 +1,40 @@
 import { Component } from 'react';
 import Header from './Components/Header';
-import './App.css';
 import DisplayPerson from './Components/DisplayPerson';
+import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-
+      name: '',
+      from: '',
+      title: '',
+      employer: '',
+      favoriteMovies =[]
     }
   }
-
   previousPerson = () => {
-
+    // if () for current count 1
+    //else normal display functionality
   }
 
   nextPerson = () => {
-    // invoke a display of data
-    // call a function or render a component that would go to next person on array
+    // if for count 25
+    //else
+    //normal functionality
+
   }
 
   render() {
     return (
       <section className="App" >
         <Header />
-        <body className="body">
+        <div className="body">
           <DisplayPerson />
-          <button onclick={this.previousPerson}>Previous</button>
-          <button onclick={this.nextPerson}>Next</button>
-        </body>
+          <button onClick={this.previousPerson}>Previous</button>
+          <button onClick={this.nextPerson}>Next</button>
+        </div>
       </section>
     );
   }
