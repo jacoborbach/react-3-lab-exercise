@@ -12,7 +12,7 @@ class DisplayPerson extends Component {
     render() {
         //console.log(this.props)
         return (
-            <section className="displayPersonContainer">
+            <section>
                 {this.state.data.map((element, i) => <PersonInformation key={i} uniqueID={i} personalInfo={element} count={this.props.count} />)}
             </section >
         )
