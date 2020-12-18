@@ -1,19 +1,12 @@
 import { Component } from 'react';
 import Header from './Components/Header';
 import DisplayPerson from './Components/DisplayPerson';
-import data from './data';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      name: '',
-      from: '',
-      title: '',
-      employer: '',
-      favoriteMovies: [],
-      data: data,
       count: 0
     }
   }
@@ -32,21 +25,21 @@ class App extends Component {
   }
 
   nextPerson = () => {
-    //person showing +1
-    //this.state.count = this.state.count + 1;
     const { count } = this.state;
     this.setState({
       count: count + 1
     })
-
     // const nextButton = document.getElementById('nextButton');
     // if (this.state.data.id === this.state.data.length - 1) {
     //   nextButton.className = 'hide';
     // } else {
     //   nextButton.className = 'nextButton';
     // }
-
   }
+
+  // deleteItem = () => {
+  //   delete props.personalInfo
+  // }
 
   render() {
     // const prevButton = document.getElementById('previousButton');
