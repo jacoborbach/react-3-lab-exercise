@@ -1,17 +1,20 @@
 import { Component } from 'react';
 import Header from './Components/Header';
 import DisplayPerson from './Components/DisplayPerson';
+import data from './data';
 import './App.css';
 
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      count: 0
+      count: 0,
+      data
     }
   }
 
   previousPerson = () => {
+    if (this.state.count === 0) return;
     const { count } = this.state;
     this.setState({
       count: count - 1
@@ -25,6 +28,7 @@ class App extends Component {
   }
 
   nextPerson = () => {
+    if (this.state.count === this.state.data.length - 1) return;
     const { count } = this.state;
     this.setState({
       count: count + 1
