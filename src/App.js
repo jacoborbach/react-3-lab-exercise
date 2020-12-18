@@ -49,9 +49,8 @@ class App extends Component {
   }
 
   render() {
-    //console.log(this.state.data.length - 1)
-    const prevButton = document.getElementById('previousButton');
-    console.log(prevButton)
+    // const prevButton = document.getElementById('previousButton');
+    // console.log(prevButton)
     return (
       <section className="App" >
         <Header />
